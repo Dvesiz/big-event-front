@@ -1,38 +1,142 @@
-# big-event-front
+🚀 Big Event 前端项目（big-event-front）
 
-This template should help get you started developing with Vue 3 in Vite.
+基于 Vue 3 + Vite 的事件管理系统前端
+课程设计 / 实训项目
 
-## Recommended IDE Setup
+一、项目简介
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Big Event 是一个前后端分离的事件管理系统，本仓库为 前端项目，主要负责系统的界面展示、用户交互以及与后端接口的数据通信。
 
-## Recommended Browser Setup
+系统面向普通用户与管理员，提供事件浏览、事件管理、用户认证等功能，整体采用现代化前端技术栈，界面简洁、结构清晰，便于扩展和维护。
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+二、技术栈说明
+1️⃣ 核心框架
 
-## Customize configuration
+Vue 3：前端主框架，采用 Composition API
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Vite：构建工具，启动快、热更新体验好
 
-## Project Setup
+2️⃣ UI 与交互
 
-```sh
+Element Plus / Vant（如有使用）：UI 组件库
+
+Axios：HTTP 请求库，用于与后端接口通信
+
+Vue Router：前端路由管理
+
+Pinia（如有）：状态管理
+
+3️⃣ 其他
+
+ES6+ 语法
+
+模块化开发
+
+前后端分离架构
+
+三、项目目录结构说明
+big-event-front
+├── public/                 # 公共静态资源
+├── src/
+│   ├── api/                # 接口请求封装
+│   ├── assets/             # 图片、样式等资源
+│   ├── components/         # 公共组件
+│   ├── router/             # 路由配置
+│   ├── store/              # 状态管理（Pinia）
+│   ├── views/              # 页面视图
+│   ├── utils/              # 工具类（如 token、request 封装）
+│   ├── App.vue             # 根组件
+│   └── main.js             # 项目入口
+├── index.html              # HTML 模板
+├── package.json            # 项目依赖配置
+├── vite.config.js          # Vite 配置文件
+└── README.md               # 项目说明文档
+
+四、主要功能模块
+1️⃣ 用户模块
+
+用户登录 / 退出
+
+登录状态校验（Token 机制）
+
+权限控制（未登录禁止访问核心页面）
+
+2️⃣ 事件管理模块
+
+事件列表展示
+
+事件新增
+
+事件编辑
+
+事件删除
+
+事件详情查看
+
+3️⃣ 通用功能
+
+表单校验
+
+全局提示信息
+
+请求拦截与响应拦截
+
+统一错误处理
+
+五、项目运行方式
+1️⃣ 克隆项目
+git clone git@github.com:Dvesiz/big-event-front.git
+
+2️⃣ 安装依赖
 npm install
-```
 
-### Compile and Hot-Reload for Development
 
-```sh
+建议 Node.js 版本：16+
+
+3️⃣ 启动项目
 npm run dev
-```
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```
+浏览器访问：
+
+http://localhost:5173
+
+六、前后端接口说明
+
+本项目为 前后端分离
+
+前端通过 Axios 调用后端 RESTful 接口
+
+接口地址统一在 src/api 或 utils/request.js 中配置
+
+支持 Token 认证，请求头自动携带 Authorization
+
+七、项目特点与亮点（答辩可用）
+
+✅ 使用 Vue 3 + Vite，符合当前主流前端技术趋势
+
+✅ 采用组件化、模块化开发，结构清晰
+
+✅ 实现前后端分离，便于维护与扩展
+
+✅ 统一接口封装，降低代码耦合度
+
+✅ 支持权限控制与登录校验
+
+八、开发环境说明
+
+操作系统：Windows 10 / 11
+
+开发工具：VS Code
+
+Node.js：16+
+
+包管理工具：npm
+
+九、作者说明
+
+作者：Dvesiz
+
+项目类型：课程设计 / 实训项目
+
+仅用于学习与教学展示
