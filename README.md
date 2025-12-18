@@ -22,10 +22,10 @@
 
 ### 2️⃣ UI 与交互
 
-- **Element Plus / Vant（如有使用）**：UI 组件库  
+- **Element Plus / Vant**（如有使用）：UI 组件库  
 - **Axios**：HTTP 请求库，用于与后端接口通信  
 - **Vue Router**：前端路由管理  
-- **Pinia（如有）**：状态管理  
+- **Pinia**（如有）：状态管理  
 
 ### 3️⃣ 其他
 
@@ -37,22 +37,36 @@
 
 ## 三、项目目录结构说明
 
-```text
 big-event-front
+
 ├── public/                 # 公共静态资源
+
 ├── src/
+
 │   ├── api/                # 接口请求封装
+
 │   ├── assets/             # 图片、样式等资源
+
 │   ├── components/         # 公共组件
+
 │   ├── router/             # 路由配置
+
 │   ├── store/              # 状态管理（Pinia）
+
 │   ├── views/              # 页面视图
+
 │   ├── utils/              # 工具类（如 token、request 封装）
+
 │   ├── App.vue             # 根组件
+
 │   └── main.js             # 项目入口
+
 ├── index.html              # HTML 模板
+
 ├── package.json            # 项目依赖配置
+
 ├── vite.config.js          # Vite 配置文件
+
 └── README.md               # 项目说明文档
 
 ---
@@ -85,35 +99,34 @@ big-event-front
 ## 五、项目运行方式
 
 ### 1️⃣ 克隆项目
+
 bash
 
 git clone git@github.com:Dvesiz/big-event-front.git
 
-
 ### 2️⃣ 安装依赖
+
 bash
 
 npm install
 
-> 建议 Node.js 版本：**16+**
 
 ### 3️⃣ 启动项目
+
 bash
 
 npm run dev
 
-
-浏览器访问地址：
-http://localhost:5173
+浏览器访问地址：http://localhost:8081
 
 ---
 
 ## 六、前后端接口说明
 
-- 本项目采用 **前后端分离架构**。
-- 前端通过 **Axios** 调用后端 RESTful API。
-- 接口地址统一在 `src/api` 或 `utils/request.js` 中配置。
-- 系统采用 **Token 认证机制**，请求头自动携带 `Authorization`。
+- 本项目采用 **前后端分离架构**。  
+- 前端通过 **Axios** 调用后端 RESTful API。  
+- 接口地址统一在 `src/api` 或 `utils/request.js` 中配置。  
+- 系统采用 **Token 认证机制**，请求头自动携带 `Authorization`。  
 
 ---
 
